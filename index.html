@@ -1,1 +1,248 @@
-Mass Index Indicator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Contribution: Mass Index Feature</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.8em;
+      font-weight: 700;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 30px 25px;
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.8em;
+      color: #2575fc;
+    }
+    .section p {
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    ul {
+      margin: 15px 0 0 20px;
+    }
+    a.btn {
+      display: inline-block;
+      margin: 10px 5px 0 0;
+      padding: 10px 18px;
+      background: #2575fc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+      font-weight: 500;
+    }
+    a.btn:hover {
+      background: #6a11cb;
+    }
+    img.screenshot {
+      display: block;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portfolio Contribution: Mass Index Feature</h1>
+    <p>AI Agent Stock Prediction System – Technical Indicator Development & Integration</p>
+  </header>
+
+  <div class="container">
+
+    <section class="section" id="intro">
+      <h2>Introduction</h2>
+      <p>
+        This project implements a Mass Index technical indicator module within our AI Agent Stock Prediction system. 
+        I developed the core Mass Index calculation, built a customizable Streamlit interface supporting both real-time and historical data, integrated CrewAI agents for automated buy/sell/hold recommendations, wrote comprehensive unit and integration tests, and designed a backtesting framework to evaluate strategy performance.
+      </p>
+      <a href="https://github.com/KANNACHANDU9966/Kanna-AI-Agent-Stock-Prediction" class="btn" target="_blank">View Code on GitHub</a>
+    </section>
+
+    <section class="section" id="overview">
+      <h2>Project Overview</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sprint</th>
+            <th>Primary Objective</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sprint 1</td>
+            <td>Minimal Viable Product: core Mass Index calculation & display</td>
+          </tr>
+          <tr>
+            <td>Sprint 2</td>
+            <td>Customization & Data Integration: UI parameter controls, real-time & historical data fetch</td>
+          </tr>
+          <tr>
+            <td>Sprint 3</td>
+            <td>CrewAI Integration & Testing Scaffold: automated recommendations & initial test cases</td>
+          </tr>
+          <tr>
+            <td>Sprint 4</td>
+            <td>Quality & Validation: unit/integration tests and backtesting framework</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="stories-tasks">
+      <h2>User Story &amp; Task Summary</h2>
+      <p><strong>Key User Story</strong>: As a trader, I want to use the Mass Index integrated with CrewAI agents to identify trend reversals and receive clear investment recommendations.</p>
+      <ul>
+        <li><strong>MassIndex.1 – Indicator Calculation</strong>: implemented core EMA-based Mass Index algorithm (25h)</li>
+        <li><strong>MassIndex.3 – Real-Time &amp; Historical Integration</strong>: added data fetching & customization features (26h)</li>
+        <li><strong>MassIndex.8 – CrewAI Recommendation Support</strong>: built & tested agent tasks for buy/sell/hold signals (32h)</li>
+        <li><strong>MassIndex.10 – Unit &amp; Integration Tests</strong>: developed test suites to ensure reliability (13h)</li>
+        <li><strong>MassIndex.11 – Backtesting Framework</strong>: implemented backtest and performance metrics (30h)</li>
+      </ul>
+      <img src="assets/mass_index_chart.png" alt="Mass Index Chart Screenshot" class="screenshot">
+    </section>
+
+    <section class="section" id="contributions">
+      <h2>Contributions</h2>
+      <p>Below are my direct contributions to the Mass Index feature, with links to the code and supporting screenshots:</p>
+      <ul>
+        <li><strong>EMA-Based Algorithm:</strong> Developed the Mass Index calculation logic. <a href="https://github.com/KANNACHANDU9966/Kanna-AI-Agent-Stock-Prediction/blob/main/src/indicators/mass_index.py" target="_blank">mass_index.py</a></li>
+        <li><strong>Streamlit Interface:</strong> Built UI controls for parameters and data mode. <a href="https://github.com/KANNACHANDU9966/Kanna-AI-Agent-Stock-Prediction/blob/main/src/app.py" target="_blank">app.py (lines 80–140)</a></li>
+        <li><strong>CrewAI Task Integration:</strong> Implemented agent tasks for actionable buy/sell/hold signals. <a href="https://github.com/KANNACHANDU9966/Kanna-AI-Agent-Stock-Prediction/blob/main/src/agents/mass_index_agents.py" target="_blank">mass_index_agents.py</a></li>
+        <li><strong>Automated Tests:</strong> Authored unit and integration tests. <a href="https://github.com/KANNACHANDU9966/Kanna-AI-Agent-Stock-Prediction/blob/main/tests/test_mass_index.py" target="_blank">test_mass_index.py</a></li>
+        <li><strong>Backtesting Module:</strong> Built backtester and performance reporting. <a href="https://github.com/KANNACHANDU9966/Kanna-AI-Agent-Stock-Prediction/blob/main/src/backtest/mass_index_backtest.py" target="_blank">mass_index_backtest.py</a></li>
+      </ul>
+      <img src="1.jpg" class="screenshot">
+      <img src="2.jpg" class="screenshot">
+      <img src="3.jpg" class="screenshot">
+      <img src="4.jpg" class="screenshot">
+      <img src="5.jpg" class="screenshot">
+      <img src="6.jpg" class="screenshot">
+    </section>
+
+    <section class="section" id="appendix">
+      <h2>Appendix: Downloads &amp; Commit History</h2>
+
+      <h3>Task Hours Documents</h3>
+      <a href="Chandu%20Kanna%20Sprint%201%20Task%20Hours.docx" download class="btn">Sprint 1 Hours</a>
+      <a href="Chandu%20Kanna%20Sprint%202%20Task%20Hours.docx" download class="btn">Sprint 2 Hours</a>
+      <a href="Chandu%20Kanna%20Sprint%203%20Task%20Hours.docx" download class="btn">Sprint 3 Hours</a>
+      <a href="Chandu%20Kanna%20Sprint%204%20Task%20Hours.docx" download class="btn">Sprint 4 Hours</a>
+
+      <h3>Commit History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Commit</th>
+            <th>Description</th>
+            <th>User Story</th>
+            <th>Task ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feb 4, 2025</td>
+            <td>b3b9b803536014d6f9bf97a0687510eed2b23d69</td>
+            <td>Mass Index Indicator code</td>
+            <td>Mass Index</td>
+            <td>MassIndex.1</td>
+          </tr>
+          <tr>
+            <td>Feb 8, 2025</td>
+            <td>533d312d35dc165a470d9738d23ca50a273e2491</td>
+            <td>Customization features (Sprint 2)</td>
+            <td>Mass Index</td>
+            <td>MassIndex.3</td>
+          </tr>
+          <tr>
+            <td>Feb 15, 2025</td>
+            <td>d20daae71f0dbb8ee92782dae1640039b27804ce</td>
+            <td>Real-time &amp; historic data support</td>
+            <td>Mass Index</td>
+            <td>MassIndex.3</td>
+          </tr>
+          <tr>
+            <td>Mar 17, 2025</td>
+            <td>afef7fd7e5c9a8ffc80b36108daa2e53b7eab511</td>
+            <td>CrewAI recommendation integration</td>
+            <td>Mass Index</td>
+            <td>MassIndex.8</td>
+          </tr>
+          <tr>
+            <td>Apr 1, 2025</td>
+            <td>a41a220ea6b75a496de3ad2f21699d7aa3100126</td>
+            <td>Testing code for Mass Index</td>
+            <td>Mass Index</td>
+            <td>MassIndex.10</td>
+          </tr>
+          <tr>
+            <td>Apr 22, 2025</td>
+            <td>b28b404c54ba27642fcaf9b056bc7e473f6b8c82</td>
+            <td>Backtesting Mass Index strategy</td>
+            <td>Mass Index</td>
+            <td>MassIndex.11</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+
+
+</body>
+</html>
